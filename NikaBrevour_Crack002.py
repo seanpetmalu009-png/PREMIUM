@@ -80,7 +80,7 @@ approved_normalized = { normalize(k) for k in approved_keys }
 def first_step():
     clear_screen()
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    print(f"  {GREEN} PAY TO ACCESS {DO NOT RESELL WITHOUT PERMISSION ON NIKA}")
+    print(f"  {GREEN} PAY TO ACCESS {RESET}")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
     print(f"{GREEN} THIS TOOL IS NOT FREE! {RESET}\n")
     print("add the admin account and message to get the key! Please message the admin again for the new key, resellers should have a customized key!.\n")
