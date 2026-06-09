@@ -26,18 +26,18 @@ import time
 
 
 # admin account 
-admin_url = "https://www.facebook.com/profile.php?id=61590547951890"
+admin_url = "https://t.me/+aLGiUUec9w43ODdl"
 
 
 # Valid keys (cleaned - no trailing space)
 approved_keys = [
-    "nikabrevourclient"
+    "nikaaflareclients"
 ]
 
 
 # ANSI color codes
-YELLOW = "\033[1;32m"
-BRIGHT_RED = "\033[95m"
+GREEN = "\033[1;32m"
+BRIGHT_PURPLE = "\033[95m"
 BLUE = "\033[34m"
 RESET = "\033[0m"
 
@@ -80,7 +80,7 @@ approved_normalized = { normalize(k) for k in approved_keys }
 def first_step():
     clear_screen()
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    print(f"  {GREEN} PAY TO ACCESS {RESET}")
+    print(f"        {GREEN} PAY TO ACCESS {RESET}")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
     print(f"{GREEN} THIS TOOL IS NOT FREE! {RESET}\n")
     print("add the admin account and message to get the key! Please message the admin again for the new key, resellers should have a customized key!.\n")
@@ -97,7 +97,7 @@ def first_step():
             print(f"Error while opening link: {e}")
 
 
-    input("\nPress Enter and input the key by nika brevour")
+    input("\nPress Enter and input the key")
 
 
 def check_key():
@@ -107,7 +107,7 @@ def check_key():
         user_key = input("\nEnter your key (visible): ")
         user_norm = normalize(user_key)
         if user_norm in approved_normalized:
-            print(f"\n{WHITE}{YELLOW}{BLUE}{RED}Key approved! Script is running...{RESET}\n")
+            print(f"\n{GREEN}Key approved! Script is running...{RESET}\n")
             return True
         else:
             attempts += 1
@@ -275,7 +275,7 @@ sys.stdout.write('\x1b]2;𓆩【FB_CLONE 】𓆪 \x07')
 
 
 
-    # AHB Clover Logo - Blue Red White Yellow- Version 2.5
+    # AHB Clover Logo - Green - Version 2.5
 def ____banner____():
     if 'win' in sys.platform:
         os.system('cls')
@@ -284,19 +284,20 @@ def ____banner____():
     
     print("""\033[34m
         
-                
-   ███╗   ██╗██╗██╗  ██╗ █████╗  █████╗     \033[95m███████╗██╗      █████╗ ██████╗ ███████╗
-  ████╗  ██║██║██║ ██╔╝██╔══██╗██╔══██╗    \033[95m██╔════╝██║     ██╔══██╗██╔══██╗██╔════╝
-  ██╔██╗ ██║██║█████╔╝ ███████║███████║    \033[95m█████╗  ██║     ███████║██████╔╝█████╗
-  ██║╚██╗██║██║██╔═██╗ ██╔══██║██╔══██║    \033[95m██╔══╝  ██║     ██╔══██║██╔══██╗██╔══╝
-  ██║ ╚████║██║██║  ██╗██║  ██║██║  ██║    \033[95m ██║     ███████╗██║  ██║██║  ██║███████╗
-  ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    \033[95m ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
-\033[93m 
+   
+███████╗██████╗      ██████╗██╗      ██████╗ ███╗   ██╗███████╗   
+██╔════╝██╔══██╗    ██╔════╝██║     ██╔═══██╗████╗  ██║██╔════╝
+█████╗  ██████╦╝    ██║     ██║     ██║   ██║██╔██╗ ██║█████╗  
+██╔══╝  ██╔══██╗    ██║     ██║     ██║   ██║██║╚██╗██║██╔══╝  
+██║     ██████╦╝    ╚██████╗███████╗╚██████╔╝██║ ╚████║███████╗
+╚═╝     ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
 
-
-\033[0m""")
-
-
+  ███╗   ██╗██╗██╗  ██╗ █████╗  █████╗             ███████╗██╗      █████╗ ██████╗ ███████╗
+  ████╗  ██║██║██║ ██╔╝██╔══██╗██╔══██╗           ██╔════╝██║     ██╔══██╗██╔══██╗██╔════╝
+  ██╔██╗ ██║██║█████╔╝ ███████║███████║           █████╗  ██║     ███████║██████╔╝█████╗
+  ██║╚██╗██║██║██╔═██╗ ██╔══██║██╔══██║           ██╔══╝  ██║     ██╔══██║██╔══██╗██╔══╝
+  ██║ ╚████║██║██║  ██╗██║  ██║██║  ██║            ██║     ███████╗██║  ██║██║  ██║███████╗
+  ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝            ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 
 
 def creationyear(uid):
@@ -635,185 +636,4 @@ def login_2(uid):
 
 
 if __name__ == '__main__':
-    
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-# Pipfile.lock
-
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-# uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-# poetry.lock
-# poetry.toml
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
-# pdm.lock
-# pdm.toml
-.pdm-python
-.pdm-build/
-
-# pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-# pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
-.pixi
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# Redis
-*.rdb
-*.aof
-*.pid
-
-# RabbitMQ
-mnesia/
-rabbitmq/
-rabbitmq-data/
-
-# ActiveMQ
-activemq-data/
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.envrc
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#   JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#   be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#   and can be added to the global gitignore or merged into this file.  For a more nuclear
-#   option (not recommended) you can uncomment the following to ignore the entire idea folder.
-# .idea/
-
-# Abstra
-#   Abstra is an AI-powered process automation framework.
-#   Ignore directories containing user credentials, local state, and settings.
-#   Learn more at https://abstra.io/docs
-.abstra/
-
-# Visual Studio Code
-#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#   that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#   and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#   you could uncomment the following to ignore the entire vscode folder
-# .vscode/
-# Temporary file for partial code execution
-tempCodeRunnerFile.py
-
-# Ruff stuff:
-.ruff_cache/
-
-# PyPI configuration file
-.pypirc
-
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
-
-# Streamlit
-.streamlit/secrets.toml
+    BNG_71_()
